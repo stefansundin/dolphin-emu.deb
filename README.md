@@ -25,6 +25,18 @@ debuild -i -us -uc -b
 - https://launchpad.net/~dolphin-emu/+archive/ubuntu/ppa
 - https://code.launchpad.net/~dolphin-emu/dolphin-emu/debian-master
 
+# Rebase patch
+
+Debian packages doesn't allow patches with fuzz, so because Tilka's patch doesn't cleanly apply anymore, I had to rebase it like this:
+
+```bash
+git clone -b dolphinbar_linux https://github.com/Tilka/dolphin.git
+cd dolphin
+git remote add upstream https://github.com/dolphin-emu/dolphin
+git pull --rebase upstream master
+git diff upstream/master..HEAD > ../dolphinbar_linux.patch
+```
+
 # Other useful commands
 
 ```

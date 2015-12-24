@@ -1,4 +1,6 @@
 /tmp
+/dolphin-emu-master
+/dolphin-emu-master-dbg
 /files
 *.debhelper.log
 *.substvars

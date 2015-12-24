@@ -1,14 +1,5 @@
-From 985027c920fbb50c1509ccd3ff428d302f88acdd Mon Sep 17 00:00:00 2001
-From: Tillmann Karras <tilkax@gmail.com>
-Date: Sun, 14 Dec 2014 12:26:47 +0100
-Subject: [PATCH] WiimoteReal: add support for DolphinBar on Linux
-
----
- Source/Core/Core/HW/WiimoteReal/IONix.cpp | 178 ++++++++++++++++++++++++++++++
- 1 file changed, 178 insertions(+)
-
 diff --git a/Source/Core/Core/HW/WiimoteReal/IONix.cpp b/Source/Core/Core/HW/WiimoteReal/IONix.cpp
-index c72dbad..ab5a35a 100644
+index f2abd83..3220a93 100644
 --- a/Source/Core/Core/HW/WiimoteReal/IONix.cpp
 +++ b/Source/Core/Core/HW/WiimoteReal/IONix.cpp
 @@ -9,6 +9,7 @@
@@ -17,9 +8,9 @@ index c72dbad..ab5a35a 100644
  #include <bluetooth/l2cap.h>
 +#include <libusb.h>
  
- #include "Common/Common.h"
- #include "Core/HW/WiimoteReal/WiimoteReal.h"
-@@ -16,6 +17,181 @@
+ #include "Common/CommonTypes.h"
+ #include "Common/Logging/Log.h"
+@@ -18,6 +19,181 @@
  namespace WiimoteReal
  {
  
@@ -201,7 +192,7 @@ index c72dbad..ab5a35a 100644
  class WiimoteLinux final : public Wiimote
  {
  public:
-@@ -75,6 +251,8 @@ void WiimoteScanner::Update()
+@@ -77,6 +253,8 @@ void WiimoteScanner::Update()
  
  void WiimoteScanner::FindWiimotes(std::vector<Wiimote*> & found_wiimotes, Wiimote* & found_board)
  {

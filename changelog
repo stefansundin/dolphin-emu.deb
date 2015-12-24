@@ -1,0 +1,6 @@
+dolphin-emu-master (4.0-8439-dolphinbar1) wily; urgency=medium
+
+  * First release. Based on cfd3005 (8439).
+  * Includes Tilka's dolphinbar_linux patch.
+
+ -- Stefan Sundin <stefan@stefansundin.com>  Wed, 23 Dec 2015 17:48:25 -0800

@@ -1,0 +1,9 @@
+/powermate
+/files
+*.debhelper.log
+*.substvars
+.bzr
+
+Thumbs.db
+.DS_Store
+*.swp

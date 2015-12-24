@@ -1,5 +1,7 @@
 This is a debianization of Dolphin with Tilka's [dolphinbar_linux](https://github.com/Tilka/dolphin/tree/dolphinbar_linux) branch applied. The debianization is based on [the official ppa](https://launchpad.net/~dolphin-emu/+archive/ubuntu/ppa).
 
+If you had the DolphinBar connected before installing this package, remember to unplug it and plug it back in for the udev rule to take effect.
+
 # Prerequisites
 
 ```bash
@@ -17,6 +19,8 @@ cd dolphin-cfd300586a64def09e6bc2e70c354d4e1646bf42
 git clone https://github.com/stefansundin/dolphin-emu.deb.git debian
 debuild -i -us -uc -b
 ```
+
+Add `-nc` to `debuild` if you are building the files several times. It saves time by not recompiling everything.
 
 # See also
 

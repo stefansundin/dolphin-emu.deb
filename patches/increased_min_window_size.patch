@@ -1,0 +1,12 @@
+diff -ur a/Source/Core/DolphinWX/Main.cpp b/Source/Core/DolphinWX/Main.cpp
+--- a/Source/Core/DolphinWX/Main.cpp	2015-12-23 14:36:40.000000000 -0800
++++ b/Source/Core/DolphinWX/Main.cpp	2015-12-24 18:03:41.916401546 -0800
+@@ -152,7 +152,7 @@
+ 	                        m_use_debugger, m_batch_mode, m_use_logger);
+ 
+ 	SetTopWindow(main_frame);
+-	main_frame->SetMinSize(wxSize(400, 300));
++	main_frame->SetMinSize(wxSize(950, 500));
+ 
+ 	AfterInit();
+ 

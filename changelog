@@ -1,3 +1,9 @@
+dolphin-emu-master (4.0-8439-dolphinbar2) wily; urgency=low
+
+  * Increase the minimum size of the main Dolphin window to 950x500, because 400x400 is way too small and I'm tired of resizing it.
+
+ -- Stefan Sundin <stefan@stefansundin.com>  Thu, 24 Dec 2015 18:05:27 -0800
+
 dolphin-emu-master (4.0-8439-dolphinbar1) wily; urgency=medium
 
   * First release. Based on cfd3005 (8439).

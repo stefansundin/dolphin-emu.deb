@@ -2,6 +2,8 @@
 /dolphin-emu-master
 /dolphin-emu-master-dbg
 /files
+/.vagrant
+*.deb
 *.debhelper.log
 *.substvars
 .bzr

@@ -1,4 +1,4 @@
-This is a debianization of Dolphin with Tilka's [dolphinbar_linux](https://github.com/Tilka/dolphin/tree/dolphinbar_linux) branch applied.
+This is a debianization of Dolphin with Tilka's [dolphinbar_linux](https://github.com/Tilka/dolphin/tree/dolphinbar_linux) patch applied.
 
 For an easy to use PPA, use: https://launchpad.net/~stefansundin/+archive/ubuntu/dolphin-emu
 
@@ -23,6 +23,18 @@ debuild -i -us -uc -b
 ```
 
 Add `-nc` to `debuild` if you are building the files several times. It saves time by not recompiling everything.
+
+## Vagrant
+
+If you are familiar with [Vagrant](https://www.vagrantup.com/), you can simply run this to build the deb file inside a VM:
+
+```shell
+git clone https://github.com/stefansundin/dolphin-emu.deb.git
+cd dolphin-emu.deb
+vagrant up
+```
+
+Follow the instructions printed by the Vagrantfile.
 
 # See also
 

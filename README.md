@@ -15,9 +15,9 @@ sudo apt-get install devscripts debhelper cmake pkg-config lsb-release libao-dev
 ```bash
 mkdir dolphin-emu
 cd dolphin-emu
-wget https://github.com/dolphin-emu/dolphin/archive/e8e0ad3e5260f3f27df3e0c5746b0978b30332b6.tar.gz -O dolphin-emu-master_4.0-8570.orig.tar.gz
-tar xzf dolphin-emu-master_4.0-8570.orig.tar.gz
-cd dolphin-e8e0ad3e5260f3f27df3e0c5746b0978b30332b6
+wget https://github.com/dolphin-emu/dolphin/archive/05e431d5b5b351d67e6d202ad5960e48f7612a58.tar.gz -O dolphin-emu-master_4.0-8961.orig.tar.gz
+tar xzf dolphin-emu-master_4.0-8961.orig.tar.gz
+cd dolphin-05e431d5b5b351d67e6d202ad5960e48f7612a58
 git clone https://github.com/stefansundin/dolphin-emu.deb.git debian
 debuild -i -us -uc -b
 ```

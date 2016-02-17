@@ -1,5 +1,5 @@
-$dolphin_version = "4.0-8570"
-$dolphin_hash = "e8e0ad3e5260f3f27df3e0c5746b0978b30332b6"
+$dolphin_version = "4.0-8961"
+$dolphin_hash = "05e431d5b5b351d67e6d202ad5960e48f7612a58"
 
 $root_provision = <<SCRIPT
 cp /vagrant/sources.list /etc/apt/sources.list

@@ -1,3 +1,10 @@
+dolphin-emu-master (4.0-8961-dolphinbar1) wily; urgency=low
+
+  * Update to 4.0-8961 (05e431d).
+  * Add udev rule for GameCube controller adapter.
+
+ -- Stefan Sundin <stefan@stefansundin.com>  Tue, 16 Feb 2016 23:22:09 -0800
+
 dolphin-emu-master (4.0-8570-dolphinbar1) wily; urgency=low
 
   * Update to 4.0-8570 (e8e0ad3).

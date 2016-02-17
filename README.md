@@ -4,6 +4,8 @@ For an easy to use PPA, use: https://launchpad.net/~stefansundin/+archive/ubuntu
 
 If you had the DolphinBar connected before installing this package, remember to unplug it and plug it back in for the udev rule to take effect.
 
+Also includes an udev rule for the GameCube controller adapter.
+
 # Prerequisites
 
 ```bash

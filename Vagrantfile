@@ -1,8 +1,10 @@
 $dolphin_version = "4.0-8961"
 $dolphin_hash = "05e431d5b5b351d67e6d202ad5960e48f7612a58"
 
+# Put a sources.list with mirrors near you in this directory for faster provisioning
+
 $root_provision = <<SCRIPT
-cp /vagrant/sources.list /etc/apt/sources.list
+[[ -f /vagrant/sources.list ]] && cp /vagrant/sources.list /etc/apt/sources.list
 
 export DEBIAN_FRONTEND=noninteractive
 apt-get update

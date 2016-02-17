@@ -3,6 +3,7 @@
 /dolphin-emu-master-dbg
 /files
 /.vagrant
+/sources.list
 *.deb
 *.debhelper.log
 *.substvars

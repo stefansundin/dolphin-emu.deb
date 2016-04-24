@@ -9,7 +9,7 @@ $root_provision = <<SCRIPT
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get install -y git gnupg2 vim
-apt-get install -y devscripts debhelper cmake pkg-config lsb-release libao-dev libasound2-dev libavcodec-dev libavformat-dev libbluetooth-dev libenet-dev libevdev-dev libgtk2.0-dev liblzo2-dev libminiupnpc-dev libopenal-dev libpolarssl-dev libpulse-dev libreadline-dev libsdl2-dev libsfml-dev libsoil-dev libswscale-dev libudev-dev libusb-1.0-0-dev libwxbase3.0-dev libwxgtk3.0-dev libxext-dev libxrandr-dev portaudio19-dev zlib1g-dev
+apt-get install -y devscripts debhelper cmake pkg-config lsb-release libao-dev libasound2-dev libavcodec-dev libavformat-dev libbluetooth-dev libenet-dev libevdev-dev libgtk2.0-dev liblzo2-dev libminiupnpc-dev libopenal-dev libpulse-dev libreadline-dev libsdl2-dev libsfml-dev libsoil-dev libswscale-dev libudev-dev libusb-1.0-0-dev libwxbase3.0-dev libwxgtk3.0-dev libxext-dev libxrandr-dev portaudio19-dev zlib1g-dev
 SCRIPT
 
 $user_provision = <<SCRIPT

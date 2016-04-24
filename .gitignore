@@ -6,6 +6,8 @@
 /sources.list
 *.deb
 *.debhelper.log
+.debhelper
+debhelper-*-stamp
 *.substvars
 .bzr
 

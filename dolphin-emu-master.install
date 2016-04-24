@@ -1,8 +1,3 @@
-usr/games/dolphin-emu
-usr/games/dolphin-emu-nogui
-usr/share/applications/dolphin-emu.desktop
-usr/share/games/dolphin-emu/sys/*
-usr/share/locale/*
-usr/share/pixmaps/dolphin-emu.xpm
+usr/*
 ../60-dolphinbar.rules lib/udev/rules.d
 ../60-gcadapter.rules lib/udev/rules.d

@@ -29,3 +29,6 @@ override_dh_auto_build:
 
 override_dh_strip:
 	dh_strip -pdolphin-emu-master --dbg-package=dolphin-emu-master-dbg
+
+override_dh_shlibdeps:
+	dh_shlibdeps -- --ignore-missing-info

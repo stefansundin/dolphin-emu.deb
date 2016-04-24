@@ -11,8 +11,8 @@ export DEB_CFLAGS_MAINT_PREPEND=-O3
 	dh $@ --buildsystem=cmake --parallel
 
 CMAKE_OPTIONS = \
-	-DDOLPHIN_WC_REVISION="4.0-8961-dolphinbar1" \
-	-DDOLPHIN_WC_DESCRIBE="4.0-8961-dolphinbar1" \
+	-DDOLPHIN_WC_REVISION="4.0-9237-dolphinbar1" \
+	-DDOLPHIN_WC_DESCRIBE="4.0-9237-dolphinbar1" \
 	-DDOLPHIN_WC_BRANCH="stefansundin" \
 	-Dbindir=/usr/games \
 	-Ddatadir=/usr/share/games/dolphin-emu \

@@ -1,5 +1,5 @@
-$dolphin_version = "4.0-8961"
-$dolphin_hash = "05e431d5b5b351d67e6d202ad5960e48f7612a58"
+$dolphin_version = "4.0-9237"
+$dolphin_hash = "3033096223de1a212d475cd670705c00daeba88d"
 
 # Put a sources.list with mirrors near you in this directory for faster provisioning
 
@@ -23,7 +23,7 @@ SCRIPT
 
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/vivid64" # I had problems with wily64
+  config.vm.box = "ubuntu/xenial64"
   config.vm.hostname = "dolphinbar-linux"
 
   # The default RAM size is not enough, the compiler will crash

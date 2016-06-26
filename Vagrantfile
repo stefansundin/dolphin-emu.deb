@@ -9,7 +9,7 @@ $root_provision = <<SCRIPT
 
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get install -y gnupg2 vim devscripts debhelper libcurl4-openssl-dev
+apt-get install -y gnupg2 vim devscripts debhelper libcurl4-openssl-dev libegl1-mesa-dev libsdl2-dev
 apt-get install -y git cmake pkg-config libao-dev libasound2-dev libavcodec-dev libavformat-dev libbluetooth-dev libenet-dev libgtk2.0-dev liblzo2-dev libminiupnpc-dev libopenal-dev libpulse-dev libsfml-dev libsoil-dev libsoundtouch-dev libswscale-dev libusb-1.0-0-dev libwxbase3.0-dev libwxgtk3.0-dev libxext-dev libxrandr-dev portaudio19-dev libudev-dev libevdev-dev libmbedtls-dev libreadline-dev
 SCRIPT
 

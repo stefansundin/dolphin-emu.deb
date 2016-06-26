@@ -1,3 +1,0 @@
-usr/*
-../60-dolphinbar.rules lib/udev/rules.d
-../60-gcadapter.rules lib/udev/rules.d

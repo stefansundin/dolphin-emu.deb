@@ -1,8 +1,9 @@
 /tmp
-/dolphin-emu-master
-/dolphin-emu-master-dbg
+/dolphin-emu
+/dolphin-emu-dbg
 /files
 /.vagrant
+/ubuntu-*-cloudimg-console.log
 /sources.list
 *.deb
 *.debhelper.log

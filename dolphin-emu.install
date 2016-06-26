@@ -1,0 +1,2 @@
+Data/51-usb-device.rules /lib/udev/rules.d
+usr/*

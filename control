@@ -1,4 +1,4 @@
-Source: dolphin-emu-master
+Source: dolphin-emu
 Section: games
 Priority: optional
 Maintainer: Stefan Sundin <stefan@stefansundin.com>
@@ -11,12 +11,15 @@ Build-Depends:	debhelper (>= 9),
 				libavcodec-dev,
 				libavformat-dev,
 				libbluetooth-dev,
+				libcurl4-openssl-dev,
+				libegl1-mesa-dev,
 				libenet-dev (>= 1.3.12),
 				libevdev-dev,
 				libgtk2.0-dev,
 				liblzo2-dev (>= 2.04),
 				libminiupnpc-dev (>= 1.8),
 				libopenal-dev,
+				libpolarssl-dev (>= 1.3.8) | libmbedtls-dev,
 				libpulse-dev,
 				libreadline-dev,
 				libsdl2-dev,
@@ -34,11 +37,11 @@ Build-Depends:	debhelper (>= 9),
 Standards-Version: 3.9.5
 Homepage: https://dolphin-emu.org/
 
-Package: dolphin-emu-master
-Architecture: amd64
+Package: dolphin-emu
+Architecture: amd64 arm64
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: dolphin-emu, dolphin-emu-trunk
-Replaces: dolphin-emu, dolphin-emu-trunk
+Conflicts: dolphin-emu-master, dolphin-emu-trunk, dolphin-emu-data
+Replaces: dolphin-emu-master, dolphin-emu-trunk
 Description: GameCube, Wii and Triforce emulator
  Dolphin is a GameCube, Wii and Triforce (the arcade machine based on the
  GameCube) emulator. This package includes a patch for the DolphinBar by Tilka.
@@ -51,13 +54,13 @@ Description: GameCube, Wii and Triforce emulator
  America Inc. Dolphin is not affiliated with or endorsed by the company
  mentioned.
 
-Package: dolphin-emu-master-dbg
+Package: dolphin-emu-dbg
 Section: debug
 Priority: extra
-Architecture: amd64
-Depends: dolphin-emu-master (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
-Conflicts: dolphin-emu-dbg, dolphin-emu-trunk-dbg
-Replaces: dolphin-emu-dbg, dolphin-emu-trunk-dbg
+Architecture: amd64 arm64
+Depends: dolphin-emu (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: dolphin-emu-master-dbg, dolphin-emu-trunk-dbg
+Replaces: dolphin-emu-master-dbg, dolphin-emu-trunk-dbg
 Description: GameCube, Wii and Triforce emulator - debug symbols
  Dolphin is a GameCube, Wii and Triforce (the arcade machine based on the
  GameCube) emulator.
@@ -70,4 +73,4 @@ Description: GameCube, Wii and Triforce emulator - debug symbols
  America Inc. Dolphin is not affiliated with or endorsed by the company
  mentioned.
  .
- This package provides the debug symbols for dolphin-emu-master.
+ This package provides the debug symbols for dolphin-emu.
